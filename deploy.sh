@@ -17,8 +17,10 @@ githubUrl=git@github.com:ch0769/xubunt.git   # 按你的代码仓库信息进行
 
 git init
 git add -A
-git commit -m “tuisong”s
-git remote add origin git@github.com:ch0769/xubuntu.git
-git push -f -u origin master
+git commit -m "${msg}"
+git push -f $githubUrl master:gh-pages # 推送到github
+
 cd - # 退回开始所在目录
 rm -rf docs/.vuepress/dist
+
+
